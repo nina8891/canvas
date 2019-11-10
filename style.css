@@ -1,0 +1,124 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 228px 512px;
+    justify-content: space-between;
+    grid-template-areas:
+        "painting canvas sizes"
+        "colors canvas .";
+    padding: 79px 29px 0;
+
+}
+
+ul li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.24), 0px 0px 4px rgba(0,0,0,0.12);
+}
+
+.menu-title {
+    margin-left: 30px;
+    margin-right: auto;
+    font: normal 500 20px/23px "Roboto", Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,0.87);
+}
+
+.hamburger, .dot-menu {
+    cursor: pointer;
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+}
+
+.tools_block {
+    width: 228px;
+    margin-bottom: 70px;
+    padding: 15px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.24), 0px 0px 4px rgba(0,0,0,0.12);
+}
+
+.color_picker, .prev {
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+.bucket {
+    padding: 5px 35px 25px;
+    background: url(assets/img/icon-bucket.png) no-repeat;
+}
+
+.color_picker {
+    padding: 5px 35px 15px;
+    background: url(assets/img/icon-picker.png) no-repeat;
+}
+
+.move {
+    padding: 5px 35px 25px;
+    margin-top: 20px;
+    background: url(assets/img/icon-move.png) no-repeat;
+}
+
+.transform {
+    padding: 5px 35px 15px;
+    background: url(assets/img/icon-transform.png) no-repeat;
+}
+
+.current {
+    padding: 5px 35px 25px;
+    background: url(assets/img/icon-current.png) no-repeat;
+}
+
+.prev {
+    padding: 5px 35px 15px;
+    background: url(assets/img/prev.png) no-repeat;
+}
+
+.red {
+    padding: 5px 35px 25px;
+    margin-top: 20px;
+    background: url(assets/img/red.png) no-repeat;
+}
+
+.blue {
+    padding: 5px 35px 15px;
+    background: url(assets/img/blue.png) no-repeat;
+}
+
+.canvas {
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.12), 0px 0px 4px rgba(0,0,0,0.12);
+}
+
+.sizes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 228px;
+    height: 223px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.24), 0px 0px 4px rgba(0,0,0,0.12);
+    padding-bottom: 50px;
+}
+
+.button {
+    width: 120px;
+    margin: 10px auto;
+    padding: 5px 0;
+    border-radius: 5px;
+}

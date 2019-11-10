@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Canvas</title>
+</head>
+<body>
+    <header class="header">
+        <div class="hamburger">
+            <img src="assets/img/menu.png" alt="menu" width="24" height="24"/>
+        </div>
+        <h1 class="menu-title">CodeJam - Pallete</h1>
+        <div class="dot-menu">
+            <img src="assets/img/menu icon.png" alt="dot-menu" width="12" height="24"/>
+        </div>
+    </header>
+    <main>
+        <div class="tools">
+            <div class="tools_block">
+                <ul class="painting_list">
+                    <li class="bucket">Paint bucket</li>
+                    <li class="color_picker">Choose color</li>
+                    <li class="move">Move</li>
+                    <li class="transform">Transform</li>
+                </ul>
+            </div>
+            <div class="tools_block">
+                <ul class="colors_list">
+                    <li class="current">Current color</li>
+                    <li class="prev">Prev color</li>
+                    <li class="red">red</li>
+                    <li class="blue">blue</li>
+                </ul>
+            </div>
+        </div>
+        <canvas class="canvas" width="512" height="512"></canvas>
+        <div class="sizes">
+            <button id="size4" class="button">4x4</button>
+            <button id="size32" class="button">32x32</button>
+            <button id="size256" class="button">256x256</button>
+        </div>
+
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="size256.js"></script>
+</body>
+</html>
