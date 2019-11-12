@@ -9,12 +9,14 @@
 </head>
 <body>
     <header class="header">
-        <div class="hamburger">
-            <img src="assets/img/menu.png" alt="menu" width="24" height="24"/>
-        </div>
-        <h1 class="menu-title">CodeJam - Pallete</h1>
-        <div class="dot-menu">
-            <img src="assets/img/menu icon.png" alt="dot-menu" width="12" height="24"/>
+        <div class="header__inner">
+            <div class="header__left">
+                <button class="header__menu">Open menu</button>
+                <h1 class="header__title">CodeJam - Pallete</h1>
+            </div>
+            <div class="header__right">
+                <button class="header__more">More</button>
+            </div>
         </div>
     </header>
     <main>
@@ -37,12 +39,23 @@
             </div>
         </div>
         <canvas class="canvas" width="512" height="512"></canvas>
-        <div class="sizes">
-            <button id="size4" class="button">4x4</button>
-            <button id="size32" class="button">32x32</button>
-            <button id="size256" class="button">256x256</button>
+        <div class="templates">
+            <button
+                data-type="pixels"
+                data-url="data/4x4.json"
+                class="templates__item"
+            >4x4</button>
+            <button
+                data-type="pixels"
+                data-url="data/32x32.json"
+                class="templates__item"
+            >32x32</button>
+            <button
+                data-type="image"
+                data-url="assets/img/rsschool.png"
+                class="templates__item"
+            >256x256</button>
         </div>
-
     </main>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="size256.js"></script>
